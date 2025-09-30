@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Kapsul | Micro-Time Capsule</title>
+    <link rel="icon" href="../assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../scripts/tailwind-config.js"></script>
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div id="toast-container"></div>
+
+    <header class="border-b border-white/10 bg-slate-900/70 backdrop-blur">
+      <div class="max-w-5xl mx-auto px-4 sm:px-5 py-3 sm:py-4 flex items-center justify-between">
+        <a href="./dashboard.html" class="flex items-center gap-2 sm:gap-3 text-base sm:text-lg font-semibold">
+          <img src="../assets/favicon.svg" alt="Logo" class="w-7 h-7 sm:w-8 sm:h-8" />
+          <span class="hidden sm:inline">Micro-Time Capsule</span>
+          <span class="sm:hidden">MTC</span>
+        </a>
+        <nav class="flex items-center gap-2 sm:gap-3 text-sm">
+          <a href="./dashboard.html" class="btn-secondary px-3 py-2">Dashboard</a>
+          <a href="./public-feed.html" class="btn-secondary hidden sm:inline-flex px-3 py-2">Feed</a>
+          <button type="button" id="logout-button" class="btn-secondary hidden px-3 py-2">Keluar</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-5 py-6 sm:py-10 space-y-8 sm:space-y-10">
+      <section id="capsule-section" class="bg-white/10 border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 backdrop-blur">
+        <header class="space-y-3 sm:space-y-4">
+          <div id="countdown-wrapper" class="flex justify-start"></div>
+          <div class="space-y-2">
+            <h1 id="capsule-title" class="text-2xl sm:text-3xl font-bold">Memuat...</h1>
+            <p class="text-xs sm:text-sm text-slate-300">
+              Dibuat oleh <span id="capsule-owner">-</span> • Terbuka pada <span id="capsule-unlock">-</span>
+            </p>
+          </div>
+        </header>
+
+        <article class="space-y-5" id="capsule-content"></article>
+
+        <section id="media-section" class="space-y-3 hidden">
+          <h2 class="text-xl font-semibold">Media</h2>
+          <div id="media-wrapper"></div>
+        </section>
+
+        <section id="reaction-section" class="space-y-3 hidden">
+          <h2 class="text-lg sm:text-xl font-semibold">Reaksi</h2>
+          <div id="reaction-buttons"></div>
+        </section>
+
+        <div id="open-animation" class="hidden"></div>
+      </section>
+    </main>
+
+    <template id="loading-template">
+      <div class="animate-pulse space-y-4">
+        <div class="h-10 bg-white/10 rounded-lg"></div>
+        <div class="h-32 bg-white/10 rounded-lg"></div>
+        <div class="h-6 bg-white/10 rounded-lg"></div>
+      </div>
+    </template>
+
+    <script type="module" src="../scripts/capsule-detail.js"></script>
+  </body>
+</html>
