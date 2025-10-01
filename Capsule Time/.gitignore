@@ -73,3 +73,7 @@ coverage/
 # Documentation (private notes)
 docs/
 /docs
+*.md
+#markdown
+.md
+/docs/.md
