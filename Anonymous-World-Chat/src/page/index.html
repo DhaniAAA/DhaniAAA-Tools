@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anonymous World Chat</title>
+  <link rel="stylesheet" href="/Anonymous-World-Chat/src/style/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/Anonymous-World-Chat/src/assets/globe-chat.svg" />
+</head>
+
+<body>
+  <div id="app" class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">??</span>
+        <div>
+          <h1>Anonymous World Chat</h1>
+          <p class="tagline">Global rooms, zero friction, total anonymity.</p>
+        </div>
+      </div>
+      <div class="session-info">
+        <span id="alias-label" class="alias">�</span>
+        <button id="change-alias" class="ghost">Change alias</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="Rooms">
+        <div class="sidebar-head">
+          <h2>Rooms</h2>
+          <button id="refresh-rooms" class="ghost" title="Refresh rooms">?</button>
+        </div>
+        <ul id="room-list" class="room-list" role="list"></ul>
+        <div class="room-hint">Pick a room that matches your mood � everything is realtime.</div>
+      </aside>
+
+      <section class="chat" aria-label="Chat">
+        <div id="connection-banner" class="banner banner-danger hidden" role="status">
+          <strong>Disconnected.</strong> We will retry automatically.
+        </div>
+        <div id="rate-limit-banner" class="banner banner-warning hidden" role="status">
+          You are sending messages too quickly. Please slow down.
+        </div>
+        <div id="moderation-banner" class="banner banner-warning hidden" role="status">
+          You are currently shadow banned. Your messages are not visible to others.
+        </div>
+
+        <div id="messages" class="message-list" aria-live="polite"></div>
+
+        <form id="message-form" class="message-form" autocomplete="off">
+          <div class="input-stack">
+            <textarea id="message-input" name="message" rows="2" placeholder="Share something with the room..." required
+              maxlength="1000"></textarea>
+            <div class="form-meta">
+              <span id="char-count">0 / 1000</span>
+              <div class="actions">
+                <button id="attach-reply-cancel" class="ghost hidden" type="button">Cancel reply</button>
+                <button type="submit" class="primary">Send</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="panel" aria-label="Tools">
+        <section class="card">
+          <h2>Local Controls</h2>
+          <div class="card-body">
+            <p class="muted">Mute users you do not want to see. This is stored locally on your device.</p>
+            <ul id="muted-users" class="muted-list"></ul>
+          </div>
+        </section>
+
+        <section class="card" id="admin-panel" hidden>
+          <div class="card-head">
+            <h2>Admin Panel</h2>
+            <button id="close-admin" class="ghost">Close</button>
+          </div>
+          <div class="card-body">
+            <div class="card-section">
+              <h3>Open Reports</h3>
+              <ul id="report-list" class="report-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <button id="open-admin" class="ghost tiny">Admin sign-in</button>
+      </aside>
+    </main>
+  </div>
+
+  <dialog id="auth-dialog" class="modal" aria-modal="true">
+    <form id="auth-form" method="dialog" class="modal-body">
+      <h2>Choose an alias</h2>
+      <p class="muted">No email, no password, just a vibe. Aliases are visible to everyone in rooms.</p>
+      <label for="alias-input" class="field-label">Alias</label>
+      <input id="alias-input" name="alias" type="text" required minlength="3" maxlength="24"
+        pattern="[A-Za-z0-9_\-]+" />
+      <div class="hint">Letters, numbers, dashes, or underscores.</div>
+      <menu class="modal-actions">
+        <button value="cancel" class="ghost">Exit</button>
+        <button value="confirm" class="primary">Enter chat</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="report-dialog" class="modal" aria-modal="true">
+    <form id="report-form" method="dialog" class="modal-body">
+      <h2>Report message</h2>
+      <p class="muted">Describe why this message breaks the community guidelines.</p>
+      <textarea id="report-reason" name="reason" rows="4" required maxlength="500"></textarea>
+      <menu class="modal-actions">
+        <button value="cancel" class="ghost">Cancel</button>
+        <button value="confirm" class="primary">Submit report</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <dialog id="admin-dialog" class="modal" aria-modal="true">
+    <form id="admin-form" method="dialog" class="modal-body">
+      <h2>Admin authentication</h2>
+      <p class="muted">Enter the admin token</p>
+      <input id="admin-token" name="token" type="password" required />
+      <menu class="modal-actions">
+        <button value="cancel" class="ghost">Cancel</button>
+        <button value="confirm" class="primary">Unlock</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <template id="message-template">
+    <article class="message" data-message-id="">
+      <header class="message-meta">
+        <span class="alias"></span>
+        <time class="timestamp" datetime=""></time>
+      </header>
+      <div class="content"></div>
+      <footer class="message-actions">
+        <button class="ghost tiny" data-action="reply">Reply</button>
+        <button class="ghost tiny" data-action="react">??</button>
+        <button class="ghost tiny" data-action="report">Report</button>
+        <button class="ghost tiny" data-action="mute">Mute</button>
+        <button class="ghost tiny danger" data-action="delete" hidden>Delete</button>
+      </footer>
+    </article>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/Anonymous-World-Chat/src/scripts/config.example-guard.js"></script>
+  <script src="/Anonymous-World-Chat/src/scripts/config.js"></script>
+  <script type="module" src="/Anonymous-World-Chat/src/scripts/app.js"></script>
+</body>
+
+</html>
