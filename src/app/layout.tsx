@@ -5,7 +5,10 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.dhaniaaa.my.id";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "DhaniAAA - Portfolio",
   description:
     "Portfolio DhaniAAA - Developer & Creator. Berbagai project web development, Python tools, dan aplikasi.",
