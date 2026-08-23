@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio DhaniAAA - Developer & Creator. Berbagai project web development, Python tools, dan aplikasi.",
   verification: {
-    google: "VvtEIUx1VcrUjE7eNtjjW60419bpRYhOOvaCXV5x5cs",
+    google: "tVmuhNE0prRcZEjLAIHTaIEgRDMNhNCGJnHdQf-0qdA",
   },
   icons: {
     icon: "/assets/img/favicon.svg",

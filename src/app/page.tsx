@@ -51,7 +51,7 @@ export default function Home() {
             <div className="text-5xl mb-6">💬</div>
             <h3 className="text-xl font-bold mb-3">Manhwaku</h3>
             <p className="text-gray-500 mb-6 leading-relaxed">
-              Aplikasi manhwaku menggunakan beberapa sumber untuk menampilkan data. | Scrape data otomatis dan Deteksi chapter terbaru
+              Aplikasi Toonara menggunakan beberapa sumber untuk menampilkan data. | Scrape data otomatis dan Deteksi chapter terbaru
             </p>
             <Link href="/projects/manhwaku" className="inline-block text-white font-semibold relative group/link">
               Lihat Detail &rarr;

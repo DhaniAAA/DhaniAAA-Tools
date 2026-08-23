@@ -54,7 +54,7 @@ export default function ManhwakuProject() {
         {/* Action Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="https://www.manhwaku.biz.id/"
+            href="https://www.toonara.my.id/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-white/20"
@@ -94,7 +94,7 @@ export default function ManhwakuProject() {
         </h2>
         <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
           <p className="text-gray-400 text-lg leading-relaxed mb-4">
-            <strong className="text-white">Manhwaku</strong> adalah platform web modern untuk membaca manhwa (komik
+            <strong className="text-white">Toonara</strong> adalah platform web modern untuk membaca manhwa (komik
             Korea) secara online. Aplikasi ini dibangun dengan teknologi terkini untuk memberikan pengalaman membaca yang optimal dan
             responsif di berbagai perangkat.
           </p>
@@ -308,7 +308,7 @@ export default function ManhwakuProject() {
           <p className="text-xl text-gray-400 mb-8">Kunjungi website langsung atau lihat source code di GitHub</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://www.manhwaku.biz.id/"
+              href="https://www.toonara.my.id/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-white/20"
