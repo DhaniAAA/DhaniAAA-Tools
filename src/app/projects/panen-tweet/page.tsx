@@ -17,7 +17,7 @@ export default function PanenTweetProject() {
 
   const copyCode = (e: React.MouseEvent<HTMLButtonElement>) => {
     const btn = e.currentTarget;
-    const pre = btn.closest('.rounded-xl')?.querySelector('pre');
+    const pre = btn.closest('.')?.querySelector('pre');
     if (pre && pre.textContent) {
       navigator.clipboard.writeText(pre.textContent);
       btn.textContent = 'Copied!';
@@ -31,7 +31,7 @@ export default function PanenTweetProject() {
       <nav className="mb-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-x-1"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-black border-2 border-white text-white hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-x-1"
         >
           <span>←</span>
           <span className="font-medium">Kembali ke Portfolio</span>
@@ -51,26 +51,26 @@ export default function PanenTweetProject() {
 
         {/* Badges */}
         <div className="flex flex-wrap justify-center gap-3 mb-8">
-          <span className="px-4 py-2 bg-green-900/50 border border-green-600/50 rounded-full text-green-400 text-sm font-semibold">
+          <span className="px-4 py-2 bg-green-900/50 border border-green-600/50 text-green-400 text-sm font-semibold">
             v1.0.5
           </span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm">
+          <span className="px-4 py-2 bg-black border-2 border-white text-gray-400 text-sm">
             Python 3.7+
           </span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm">
+          <span className="px-4 py-2 bg-black border-2 border-white text-gray-400 text-sm">
             MIT License
           </span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-400 text-sm">
+          <span className="px-4 py-2 bg-black border-2 border-white text-gray-400 text-sm">
             Open Source
           </span>
         </div>
 
         {/* Quick Install */}
-        <div className="inline-flex items-center gap-4 px-6 py-4 bg-white/5 border border-white/10 rounded-xl mb-8">
+        <div className="inline-flex items-center gap-4 px-6 py-4 bg-black border-2 border-white mb-8">
           <code className="text-green-400 text-lg font-mono">pip install panen-tweet</code>
           <button
             onClick={copyInstall}
-            className="px-4 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300 text-sm"
+            className="px-4 py-2 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300 text-sm"
             id="copy-btn"
           >
             Copy
@@ -83,7 +83,7 @@ export default function PanenTweetProject() {
             href="https://pypi.org/project/panen-tweet/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+            className="px-6 py-3 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
           >
             📦 PyPI
           </a>
@@ -91,7 +91,7 @@ export default function PanenTweetProject() {
             href="https://github.com/Dhaniaaa/panen-tweet"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+            className="px-6 py-3 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
           >
             💻 GitHub
           </a>
@@ -99,7 +99,7 @@ export default function PanenTweetProject() {
             href="https://github.com/Dhaniaaa/panen-tweet/issues"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+            className="px-6 py-3 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
           >
             🐛 Issues
           </a>
@@ -107,7 +107,7 @@ export default function PanenTweetProject() {
       </header>
 
       {/* Table of Contents */}
-      <nav className="mb-12 bg-white/5 border border-white/10 rounded-2xl p-6">
+      <nav className="mb-12 bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
         <h3 className="text-lg font-bold mb-4 text-white">📑 Daftar Isi</h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <li><a href="#instalasi" className="text-gray-400 hover:text-white transition-colors">📦 Instalasi</a></li>
@@ -128,8 +128,8 @@ export default function PanenTweetProject() {
         </h2>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">Instalasi dari PyPI (Recommended)</h3>
-        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden mb-6">
-          <div className="bg-white/5 px-4 py-2 border-b border-white/10 flex justify-between items-center">
+        <div className="bg-black border-2 border-white overflow-hidden mb-6">
+          <div className="bg-black px-4 py-2 border-b border-white flex justify-between items-center">
             <span className="text-gray-500 text-sm font-medium uppercase">Terminal</span>
             <button onClick={copyCode} className="text-gray-500 hover:text-white text-sm transition-colors">Copy</button>
           </div>
@@ -139,8 +139,8 @@ export default function PanenTweetProject() {
         </div>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">Instalasi dari Source</h3>
-        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden mb-6">
-          <div className="bg-white/5 px-4 py-2 border-b border-white/10 flex justify-between items-center">
+        <div className="bg-black border-2 border-white overflow-hidden mb-6">
+          <div className="bg-black px-4 py-2 border-b border-white flex justify-between items-center">
             <span className="text-gray-500 text-sm font-medium uppercase">Terminal</span>
             <button onClick={copyCode} className="text-gray-500 hover:text-white text-sm transition-colors">Copy</button>
           </div>
@@ -150,8 +150,8 @@ export default function PanenTweetProject() {
         </div>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">🐧 Running di Google Colab / Linux</h3>
-        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-          <div className="bg-white/5 px-4 py-2 border-b border-white/10 flex justify-between items-center">
+        <div className="bg-black border-2 border-white overflow-hidden">
+          <div className="bg-black px-4 py-2 border-b border-white flex justify-between items-center">
             <span className="text-gray-500 text-sm font-medium uppercase">Google Colab</span>
             <button onClick={copyCode} className="text-gray-500 hover:text-white text-sm transition-colors">Copy</button>
           </div>
@@ -173,50 +173,50 @@ export default function PanenTweetProject() {
           <span>Mendapatkan Auth Token</span>
         </h2>
         <p className="text-gray-400 mb-6">
-          Sebelum menggunakan, Anda perlu mendapatkan <code className="bg-white/10 px-2 py-1 rounded text-green-400 font-mono">auth_token</code> dari akun Twitter/X Anda:
+          Sebelum menggunakan, Anda perlu mendapatkan <code className="bg-zinc-900 px-2 py-1 rounded text-green-400 font-mono">auth_token</code> dari akun Twitter/X Anda:
         </p>
 
         <div className="space-y-4 mb-8">
-          <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-all duration-300">
-            <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+          <div className="flex gap-4 items-start bg-black border-2 border-white p-4 hover:border-white transition-all duration-300">
+            <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold flex-shrink-0">1</div>
             <div>
               <h4 className="font-semibold text-white mb-1">Login ke X.com</h4>
               <p className="text-gray-400 text-sm">Buka <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">x.com</a> dan login menggunakan browser</p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-all duration-300">
-            <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+          <div className="flex gap-4 items-start bg-black border-2 border-white p-4 hover:border-white transition-all duration-300">
+            <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold flex-shrink-0">2</div>
             <div>
               <h4 className="font-semibold text-white mb-1">Buka Developer Tools</h4>
               <p className="text-gray-400 text-sm">Tekan <strong className="text-white">F12</strong> untuk membuka Developer Tools</p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-all duration-300">
-            <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+          <div className="flex gap-4 items-start bg-black border-2 border-white p-4 hover:border-white transition-all duration-300">
+            <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold flex-shrink-0">3</div>
             <div>
               <h4 className="font-semibold text-white mb-1">Buka Tab Application</h4>
               <p className="text-gray-400 text-sm">Pilih tab <strong className="text-white">Application</strong> (Chrome) atau <strong className="text-white">Storage</strong> (Firefox)</p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-all duration-300">
-            <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+          <div className="flex gap-4 items-start bg-black border-2 border-white p-4 hover:border-white transition-all duration-300">
+            <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold flex-shrink-0">4</div>
             <div>
               <h4 className="font-semibold text-white mb-1">Temukan Cookie</h4>
               <p className="text-gray-400 text-sm">Expand <strong className="text-white">Cookies</strong> → klik <strong className="text-white">https://x.com</strong></p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-white/5 border border-white/10 rounded-xl p-4 hover:border-white/20 transition-all duration-300">
-            <div className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center font-bold flex-shrink-0">5</div>
+          <div className="flex gap-4 items-start bg-black border-2 border-white p-4 hover:border-white transition-all duration-300">
+            <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold flex-shrink-0">5</div>
             <div>
               <h4 className="font-semibold text-white mb-1">Salin auth_token</h4>
-              <p className="text-gray-400 text-sm">Cari cookie <code className="bg-white/10 px-2 py-0.5 rounded text-green-400 font-mono">auth_token</code> dan salin nilainya</p>
+              <p className="text-gray-400 text-sm">Cari cookie <code className="bg-zinc-900 px-2 py-0.5 rounded text-green-400 font-mono">auth_token</code> dan salin nilainya</p>
             </div>
           </div>
         </div>
 
         {/* Warning & Disclaimer */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-xl p-6">
+          <div className="bg-yellow-900/20 border border-yellow-600/30 p-6">
             <h4 className="text-yellow-400 font-bold mb-3 flex items-center gap-2">
               <span>⚠️</span>
               <span>PENTING - Keamanan Token</span>
@@ -226,7 +226,7 @@ export default function PanenTweetProject() {
               <li>• Token ini memberikan akses penuh ke akun Twitter/X Anda</li>
             </ul>
           </div>
-          <div className="bg-green-900/20 border border-green-600/30 rounded-xl p-6">
+          <div className="bg-green-900/20 border border-green-600/30 p-6">
             <h4 className="text-green-400 font-bold mb-3 flex items-center gap-2">
               <span>🛡️</span>
               <span>Developer Disclaimer</span>
@@ -258,8 +258,8 @@ export default function PanenTweetProject() {
         </h2>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">Opsi 1: Command Line Interface (Termudah)</h3>
-        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden mb-6">
-          <div className="bg-white/5 px-4 py-2 border-b border-white/10">
+        <div className="bg-black border-2 border-white overflow-hidden mb-6">
+          <div className="bg-black px-4 py-2 border-b border-white">
             <span className="text-gray-500 text-sm font-medium uppercase">Terminal</span>
           </div>
           <div className="p-4">
@@ -269,8 +269,8 @@ export default function PanenTweetProject() {
         <p className="text-gray-400 mb-6">Program akan meminta: auth_token, keyword, jumlah tweet, tanggal, bahasa, dan jenis tweet.</p>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">Opsi 2: Library Python</h3>
-        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden mb-6">
-          <div className="bg-white/5 px-4 py-2 border-b border-white/10 flex justify-between items-center">
+        <div className="bg-black border-2 border-white overflow-hidden mb-6">
+          <div className="bg-black px-4 py-2 border-b border-white flex justify-between items-center">
             <span className="text-gray-500 text-sm font-medium uppercase">Python</span>
             <button onClick={copyCode} className="text-gray-500 hover:text-white text-sm transition-colors">Copy</button>
           </div>
@@ -304,20 +304,20 @@ export default function PanenTweetProject() {
         </div>
 
         <h3 className="text-xl font-semibold mb-4 text-gray-200">Opsi 3: Environment Variable</h3>
-        <div className="bg-green-900/20 border border-green-600/30 rounded-xl p-4 mb-4">
+        <div className="bg-green-900/20 border border-green-600/30 p-4 mb-4">
           <p className="text-green-400 text-sm">💡 Recommended untuk security - simpan token di environment variable</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-            <div className="bg-white/5 px-4 py-2 border-b border-white/10">
+          <div className="bg-black border-2 border-white overflow-hidden">
+            <div className="bg-black px-4 py-2 border-b border-white">
               <span className="text-gray-500 text-sm font-medium">PowerShell</span>
             </div>
             <div className="p-4">
               <pre className="text-gray-300 text-sm font-mono">$env:TWITTER_AUTH_TOKEN = &quot;token&quot;{'\n'}panen-tweet</pre>
             </div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-            <div className="bg-white/5 px-4 py-2 border-b border-white/10">
+          <div className="bg-black border-2 border-white overflow-hidden">
+            <div className="bg-black px-4 py-2 border-b border-white">
               <span className="text-gray-500 text-sm font-medium">Linux/Mac</span>
             </div>
             <div className="p-4">
@@ -335,28 +335,28 @@ export default function PanenTweetProject() {
         </h2>
         <p className="text-gray-400 mb-6">Data yang dihasilkan dalam format CSV dengan kolom:</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">username</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">handle</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">timestamp</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">tweet_text</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">url</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">reply_count</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">retweet_count</code>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-center">
+          <div className="bg-black border-2 border-white px-4 py-3 text-center">
             <code className="text-green-400 font-mono">like_count</code>
           </div>
         </div>
@@ -373,7 +373,7 @@ export default function PanenTweetProject() {
         <div className="overflow-x-auto mb-8">
           <table className="w-full text-left">
             <thead>
-              <tr className="border-b border-white/10">
+              <tr className="border-b border-white">
                 <th className="py-3 px-4 text-white font-semibold">Parameter</th>
                 <th className="py-3 px-4 text-white font-semibold">Tipe</th>
                 <th className="py-3 px-4 text-white font-semibold">Default</th>
@@ -407,7 +407,7 @@ export default function PanenTweetProject() {
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead>
-              <tr className="border-b border-white/10">
+              <tr className="border-b border-white">
                 <th className="py-3 px-4 text-white font-semibold">Parameter</th>
                 <th className="py-3 px-4 text-white font-semibold">Deskripsi</th>
               </tr>
@@ -450,7 +450,7 @@ export default function PanenTweetProject() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-green-900/20 border border-green-600/30 rounded-xl p-6">
+          <div className="bg-green-900/20 border border-green-600/30 p-6">
             <h4 className="text-green-400 font-bold mb-3">🎯 Scraping Banyak Tweet</h4>
             <ul className="text-gray-400 space-y-2 text-sm">
               <li>• Gunakan interval kecil (1 hari)</li>
@@ -458,7 +458,7 @@ export default function PanenTweetProject() {
               <li>• scroll_pause_time 7-10 detik untuk koneksi lambat</li>
             </ul>
           </div>
-          <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-xl p-6">
+          <div className="bg-yellow-900/20 border border-yellow-600/30 p-6">
             <h4 className="text-yellow-400 font-bold mb-3">⚡ Menghindari Rate Limit</h4>
             <ul className="text-gray-400 space-y-2 text-sm">
               <li>• scroll_pause_time minimal 5 detik</li>
@@ -470,11 +470,11 @@ export default function PanenTweetProject() {
 
         <h3 className="text-xl font-semibold mt-8 mb-4 text-gray-200">Kode Bahasa</h3>
         <div className="flex flex-wrap gap-3">
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm"><code className="text-green-400 font-mono">id</code> - Indonesia</span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm"><code className="text-green-400 font-mono">en</code> - English</span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm"><code className="text-green-400 font-mono">ja</code> - Japanese</span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm"><code className="text-green-400 font-mono">es</code> - Spanish</span>
-          <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm"><code className="text-green-400 font-mono">fr</code> - French</span>
+          <span className="px-4 py-2 bg-black border-2 border-white text-sm"><code className="text-green-400 font-mono">id</code> - Indonesia</span>
+          <span className="px-4 py-2 bg-black border-2 border-white text-sm"><code className="text-green-400 font-mono">en</code> - English</span>
+          <span className="px-4 py-2 bg-black border-2 border-white text-sm"><code className="text-green-400 font-mono">ja</code> - Japanese</span>
+          <span className="px-4 py-2 bg-black border-2 border-white text-sm"><code className="text-green-400 font-mono">es</code> - Spanish</span>
+          <span className="px-4 py-2 bg-black border-2 border-white text-sm"><code className="text-green-400 font-mono">fr</code> - French</span>
         </div>
       </section>
 
@@ -486,11 +486,11 @@ export default function PanenTweetProject() {
         </h2>
 
         <div className="space-y-6">
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
             <h3 className="text-xl font-bold mb-3 text-white">Error: &quot;WebDriver not found&quot;</h3>
             <p className="text-gray-400">Package otomatis download ChromeDriver. Pastikan Chrome terinstall.</p>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
             <h3 className="text-xl font-bold mb-3 text-white">Error: &quot;Auth token invalid&quot;</h3>
             <ul className="text-gray-400 space-y-1">
               <li>1. Login ulang ke x.com</li>
@@ -498,7 +498,7 @@ export default function PanenTweetProject() {
               <li>3. Pastikan tidak ada spasi saat copy-paste</li>
             </ul>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
             <h3 className="text-xl font-bold mb-3 text-white">Error: &quot;No tweets found&quot;</h3>
             <ul className="text-gray-400 space-y-1">
               <li>• Periksa koneksi internet</li>
@@ -511,7 +511,7 @@ export default function PanenTweetProject() {
 
       {/* CTA */}
       <section className="mb-16">
-        <div className="text-center py-16 px-8 bg-white/5 border border-white/10 rounded-3xl">
+        <div className="text-center py-16 px-8 bg-black border-2 border-white">
           <h2 className="text-3xl font-bold mb-4">Siap Menggunakan Panen Tweet?</h2>
           <p className="text-xl text-gray-400 mb-8">Install sekarang dan mulai scraping data tweet</p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -519,13 +519,13 @@ export default function PanenTweetProject() {
               href="https://pypi.org/project/panen-tweet/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-4 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300"
             >
               📦 Install dari PyPI
             </a>
             <Link
               href="/"
-              className="px-8 py-4 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+              className="px-8 py-4 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
             >
               ← Kembali ke Portfolio
             </Link>
@@ -534,7 +534,7 @@ export default function PanenTweetProject() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-8 border-t border-white/10">
+      <footer className="text-center py-8 border-t border-white">
         <p className="text-gray-500 mb-2">Made with ❤️ for the data science & research community</p>
         <p className="text-gray-600 text-sm">© 2025 DhaniAAA. All rights reserved.</p>
       </footer>

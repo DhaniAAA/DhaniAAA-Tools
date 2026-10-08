@@ -11,7 +11,7 @@ export default function TweetScraperProject() {
       <nav className="mb-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-x-1"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-black border-2 border-white text-white hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-x-1"
         >
           <span>←</span>
           <span className="font-medium">Kembali ke Portfolio</span>
@@ -20,7 +20,7 @@ export default function TweetScraperProject() {
 
       {/* Project Header */}
       <header className="text-center mb-16 py-12">
-        <div className="inline-block px-6 py-2 bg-white/10 border border-white/20 rounded-full text-gray-300 text-sm font-semibold uppercase tracking-wider mb-6">
+        <div className="inline-block px-6 py-2 bg-zinc-900 border-2 border-white text-gray-300 text-sm font-semibold uppercase tracking-wider mb-6">
           Desktop Application
         </div>
 
@@ -33,11 +33,11 @@ export default function TweetScraperProject() {
         </p>
 
         {/* Meta Info */}
-        <div className="flex flex-wrap justify-center gap-6 mb-8 p-6 bg-white/5 rounded-2xl border border-white/10 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 mb-8 p-6 bg-black border-2 border-white max-w-4xl mx-auto">
           <div className="flex items-center gap-2">
             <span className="text-gray-500 text-sm font-medium">Status:</span>
             <span className="text-white font-semibold flex items-center gap-1">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-green-500 animate-pulse"></span>
               Active
             </span>
           </div>
@@ -57,7 +57,7 @@ export default function TweetScraperProject() {
             href="https://github.com/DhaniAAA/Scrapping-Qt5-Tweet/releases"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-white/20"
+            className="px-8 py-4 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300"
           >
             📥 Download Aplikasi
           </a>
@@ -65,7 +65,7 @@ export default function TweetScraperProject() {
             href="https://github.com/DhaniAAA/Scrapping-Qt5-Tweet"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+            className="px-8 py-4 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
           >
             💻 View on GitHub
           </a>
@@ -74,13 +74,13 @@ export default function TweetScraperProject() {
 
       {/* Screenshots Carousel */}
       <section className="mb-16">
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+        <div className="relative overflow-hidden border-2 border-white group">
           <img
             src="/assets/img/image1.png"
             alt="Tweet Scraper Interface"
-            className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-auto transform transition-transform duration-700"
           />
-          <div className="absolute top-4 right-4 px-4 py-2 bg-black/70 backdrop-blur-md rounded-lg border border-white/10">
+          <div className="absolute top-4 right-4 px-4 py-2 bg-black/70 border-2 border-white">
             <span className="text-white text-sm font-semibold">Application Interface</span>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function TweetScraperProject() {
           <span>📖</span>
           <span>Tentang Project</span>
         </h2>
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+        <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46]">
           <p className="text-gray-400 text-lg leading-relaxed mb-4">
             <strong className="text-white">Tweet Scraper - Enhanced Edition</strong> adalah aplikasi desktop
             berbasis GUI yang powerful untuk mengumpulkan dan menganalisis data dari X.com (Twitter). Aplikasi ini
@@ -114,7 +114,7 @@ export default function TweetScraperProject() {
           <span>Fitur Utama</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">🚀</div>
             <h3 className="text-xl font-bold mb-3">Multi-Threading</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -122,7 +122,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">📅</div>
             <h3 className="text-xl font-bold mb-3">Date Range Filter</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -130,7 +130,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">🔄</div>
             <h3 className="text-xl font-bold mb-3">Auto Deduplication</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -138,7 +138,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">📊</div>
             <h3 className="text-xl font-bold mb-3">Progress Tracking</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -146,7 +146,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">💾</div>
             <h3 className="text-xl font-bold mb-3">Multi-Format Export</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -154,7 +154,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl mb-4">📈</div>
             <h3 className="text-xl font-bold mb-3">Analytics Dashboard</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -171,8 +171,8 @@ export default function TweetScraperProject() {
           <span>Technical Stack</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white/20">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
+            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white">
               Core Technologies
             </div>
             <ul className="space-y-3">
@@ -195,8 +195,8 @@ export default function TweetScraperProject() {
             </ul>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white/20">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
+            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white">
               Data Processing
             </div>
             <ul className="space-y-3">
@@ -219,8 +219,8 @@ export default function TweetScraperProject() {
             </ul>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white/20">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46]">
+            <div className="text-xl font-bold text-white mb-4 pb-3 border-b-2 border-white">
               Features
             </div>
             <ul className="space-y-3">
@@ -251,9 +251,9 @@ export default function TweetScraperProject() {
           <span>⚙️</span>
           <span>Cara Kerja</span>
         </h2>
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-6">
+        <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] space-y-6">
           <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center text-xl font-bold">
+            <div className="flex-shrink-0 w-12 h-12 bg-white text-black flex items-center justify-center text-xl font-bold">
               1
             </div>
             <div className="flex-1">
@@ -265,7 +265,7 @@ export default function TweetScraperProject() {
           </div>
 
           <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center text-xl font-bold">
+            <div className="flex-shrink-0 w-12 h-12 bg-white text-black flex items-center justify-center text-xl font-bold">
               2
             </div>
             <div className="flex-1">
@@ -277,7 +277,7 @@ export default function TweetScraperProject() {
           </div>
 
           <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center text-xl font-bold">
+            <div className="flex-shrink-0 w-12 h-12 bg-white text-black flex items-center justify-center text-xl font-bold">
               3
             </div>
             <div className="flex-1">
@@ -289,7 +289,7 @@ export default function TweetScraperProject() {
           </div>
 
           <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center text-xl font-bold">
+            <div className="flex-shrink-0 w-12 h-12 bg-white text-black flex items-center justify-center text-xl font-bold">
               4
             </div>
             <div className="flex-1">
@@ -308,8 +308,8 @@ export default function TweetScraperProject() {
           <span>💡</span>
           <span>Challenges & Solutions</span>
         </h2>
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-6">
-          <div className="pb-6 border-b border-white/10 last:border-b-0 last:pb-0">
+        <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] space-y-6">
+          <div className="pb-6 border-b border-white last:border-b-0 last:pb-0">
             <h3 className="text-xl font-bold mb-3">🎯 Challenge: Rate Limiting</h3>
             <p className="text-gray-400 leading-relaxed">
               <strong className="text-white">Solution:</strong> Implementasi smart delay system dan request
@@ -317,7 +317,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="pb-6 border-b border-white/10 last:border-b-0 last:pb-0">
+          <div className="pb-6 border-b border-white last:border-b-0 last:pb-0">
             <h3 className="text-xl font-bold mb-3">🎯 Challenge: Dynamic Content Loading</h3>
             <p className="text-gray-400 leading-relaxed">
               <strong className="text-white">Solution:</strong> Menggunakan Selenium dengan explicit waits dan scroll
@@ -325,7 +325,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="pb-6 border-b border-white/10 last:border-b-0 last:pb-0">
+          <div className="pb-6 border-b border-white last:border-b-0 last:pb-0">
             <h3 className="text-xl font-bold mb-3">🎯 Challenge: Thread Synchronization</h3>
             <p className="text-gray-400 leading-relaxed">
               <strong className="text-white">Solution:</strong> Implementasi thread-safe queue dan proper locking
@@ -333,7 +333,7 @@ export default function TweetScraperProject() {
             </p>
           </div>
 
-          <div className="pb-6 border-b border-white/10 last:border-b-0 last:pb-0">
+          <div className="pb-6 border-b border-white last:border-b-0 last:pb-0">
             <h3 className="text-xl font-bold mb-3">🎯 Challenge: Memory Management</h3>
             <p className="text-gray-400 leading-relaxed">
               <strong className="text-white">Solution:</strong> Batch processing dan periodic memory cleanup untuk
@@ -350,35 +350,35 @@ export default function TweetScraperProject() {
           <span>Data yang Dikumpulkan</span>
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">👤</div>
             <div className="text-white font-semibold text-sm">Username</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">📝</div>
             <div className="text-white font-semibold text-sm">Tweet Content</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">📅</div>
             <div className="text-white font-semibold text-sm">Timestamp</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">❤️</div>
             <div className="text-white font-semibold text-sm">Likes Count</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">🔄</div>
             <div className="text-white font-semibold text-sm">Retweets Count</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">💬</div>
             <div className="text-white font-semibold text-sm">Replies Count</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">🔗</div>
             <div className="text-white font-semibold text-sm">Tweet URL</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-4 text-center hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-3xl mb-2">🏷️</div>
             <div className="text-white font-semibold text-sm">Hashtags</div>
           </div>
@@ -392,19 +392,19 @@ export default function TweetScraperProject() {
           <span>Performance & Results</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl font-extrabold text-white mb-2">5x</div>
             <div className="text-gray-500 font-medium">Faster with Multi-Threading</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl font-extrabold text-white mb-2">10K+</div>
             <div className="text-gray-500 font-medium">Tweets Scraped</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl font-extrabold text-white mb-2">99%</div>
             <div className="text-gray-500 font-medium">Data Accuracy</div>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-white/10">
+          <div className="bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center hover:bg-zinc-900 hover:border-white transition-all duration-300 hover:-translate-y-2 hover:">
             <div className="text-5xl font-extrabold text-white mb-2">3</div>
             <div className="text-gray-500 font-medium">Export Formats</div>
           </div>
@@ -418,28 +418,28 @@ export default function TweetScraperProject() {
           <span>Use Cases</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-5xl mb-4">📊</div>
             <h3 className="text-xl font-bold mb-3">Market Research</h3>
             <p className="text-gray-400 leading-relaxed">
               Analisis sentiment dan trend untuk riset pasar dan kompetitor analysis.
             </p>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-5xl mb-4">🎓</div>
             <h3 className="text-xl font-bold mb-3">Academic Research</h3>
             <p className="text-gray-400 leading-relaxed">
               Pengumpulan data untuk penelitian akademis dan analisis sosial media.
             </p>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-5xl mb-4">📈</div>
             <h3 className="text-xl font-bold mb-3">Brand Monitoring</h3>
             <p className="text-gray-400 leading-relaxed">
               Monitor mention brand dan customer feedback secara real-time.
             </p>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+          <div className="bg-black border-2 border-white p-6 shadow-[6px_6px_0_0_#3f3f46] hover:bg-zinc-900 hover:border-white transition-all duration-300">
             <div className="text-5xl mb-4">🔍</div>
             <h3 className="text-xl font-bold mb-3">Trend Analysis</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -451,7 +451,7 @@ export default function TweetScraperProject() {
 
       {/* Call to Action */}
       <section className="mb-16">
-        <div className="text-center py-16 px-8 bg-white/5 border border-white/10 rounded-3xl">
+        <div className="text-center py-16 px-8 bg-black border-2 border-white">
           <h2 className="text-4xl font-bold mb-4">Siap Mencoba Tweet Scraper?</h2>
           <p className="text-xl text-gray-400 mb-8">Download aplikasi dan mulai scraping data tweet dengan mudah</p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -459,13 +459,13 @@ export default function TweetScraperProject() {
               href="https://github.com/DhaniAAA/Scrapping-Qt5-Tweet/releases"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-white/20"
+              className="px-8 py-4 bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300"
             >
               📥 Download Sekarang
             </a>
             <Link
               href="/"
-              className="px-8 py-4 bg-white/5 border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+              className="px-8 py-4 bg-black border-2 border-white font-semibold hover:bg-zinc-900 hover:border-white transition-all duration-300"
             >
               ← Kembali ke Portfolio
             </Link>
@@ -474,7 +474,7 @@ export default function TweetScraperProject() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-8 border-t border-white/10">
+      <footer className="text-center py-8 border-t border-white">
         <p className="text-gray-500">© 2025 DhaniAAA. All rights reserved.</p>
       </footer>
     </div>

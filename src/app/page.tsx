@@ -5,7 +5,7 @@ export default function Home() {
     <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col items-center gap-24 min-h-screen">
       {/* Hero Section */}
       <header className="text-center max-w-4xl pt-16 pb-8 animate-fade-in">
-        <div className="inline-block px-6 py-2 bg-white text-black text-sm font-semibold uppercase tracking-wider rounded-full mb-8">
+        <div className="inline-block px-6 py-2 bg-white text-black text-sm font-semibold uppercase tracking-wider mb-8">
           Portfolio
         </div>
 
@@ -24,13 +24,13 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
-            className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-black hover:text-white border-2 border-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/20"
+            className="px-8 py-4 bg-white text-black font-semibold hover:bg-black hover:text-white border-2 border-white transition-all duration-300 hover:-translate-y-0.5 hover:"
           >
             Lihat Project
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-0.5"
+            className="px-8 py-4 bg-transparent text-white border-2 border-white font-semibold hover:bg-white hover:text-black transition-all duration-300 hover:-translate-y-0.5"
           >
             Hubungi Saya
           </a>
@@ -46,7 +46,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Manhwaku */}
-          <div className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10 relative overflow-hidden">
+          <div className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] transition-all duration-300 hover:border-white hover:-translate-y-1 hover: relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
             <div className="text-5xl mb-6">💬</div>
             <h3 className="text-xl font-bold mb-3">Manhwaku</h3>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           {/* Tweet Scraper */}
-          <div className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10 relative overflow-hidden">
+          <div className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] transition-all duration-300 hover:border-white hover:-translate-y-1 hover: relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
             <div className="text-5xl mb-6">🐦</div>
             <h3 className="text-xl font-bold mb-3">Tweet Scraper - Enhanced Edition</h3>
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
 
           {/* Panen Tweet */}
-          <div className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10 relative overflow-hidden">
+          <div className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] transition-all duration-300 hover:border-white hover:-translate-y-1 hover: relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-white transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
             <div className="text-5xl mb-6">🌾</div>
             <h3 className="text-xl font-bold mb-3">Panen Tweet</h3>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* Coming Soon */}
-          <div className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 transition-all duration-300 hover:border-zinc-700 relative overflow-hidden opacity-60">
+          <div className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] transition-all duration-300 hover:border-white relative overflow-hidden opacity-60">
             <div className="text-5xl mb-6">📦</div>
             <h3 className="text-xl font-bold mb-3">Coming Soon</h3>
             <p className="text-gray-500 mb-6 leading-relaxed">
@@ -114,7 +114,7 @@ export default function Home() {
             href="https://www.instagram.com/ramadhanigb1997/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10"
+            className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:"
           >
             <div className="text-5xl mb-6">📷</div>
             <h3 className="text-xl font-bold mb-2">Instagram</h3>
@@ -126,7 +126,7 @@ export default function Home() {
             href="https://github.com/DhaniAAA/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10"
+            className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:"
           >
             <div className="text-5xl mb-6">💻</div>
             <h3 className="text-xl font-bold mb-2">Github</h3>
@@ -138,7 +138,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/dhaniaaa/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-zinc-950 border-2 border-zinc-800 rounded-2xl p-8 text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:shadow-xl hover:shadow-white/10"
+            className="group bg-black border-2 border-white p-8 shadow-[6px_6px_0_0_#3f3f46] text-center transition-all duration-300 hover:border-white hover:-translate-y-1 hover:"
           >
             <div className="text-5xl mb-6">💼</div>
             <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full text-center py-8 border-t border-zinc-800 mt-auto">
+      <footer className="w-full text-center py-8 border-t border-white mt-auto">
         <p className="text-gray-600 text-sm">© 2025 DhaniAAA. All rights reserved.</p>
       </footer>
     </div>

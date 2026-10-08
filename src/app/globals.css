@@ -50,6 +50,10 @@ html {
 }
 
 ::selection {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
+}
+
+* {
+  border-radius: 0 !important;
 }
