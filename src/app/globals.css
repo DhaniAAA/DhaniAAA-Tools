@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 @theme {
+  --color-void: #0a0a0a;
+  --color-panel: #111111;
+  --color-paper: #f4f4f0;
+  --color-lime-brutal: #ccff00;
+  --color-cyan-brutal: #00e5ff;
+  --color-magenta-brutal: #ff00e5;
+  --color-status: #00ff88;
+  --color-muted-brutal: #b4b4b0;
   --animate-float: float 15s ease-in-out infinite;
   --animate-float-delayed: float 18s ease-in-out infinite;
   --animate-pulse-slow: pulse 4s ease-in-out infinite;
@@ -36,13 +44,23 @@
 }
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #0a0a0a;
+  --foreground: #f4f4f0;
+  --brutal-lime: #ccff00;
+  --brutal-cyan: #00e5ff;
+  --brutal-magenta: #ff00e5;
+  --brutal-border: 3px;
+  --shadow-brutal: 6px 6px 0 #ccff00;
+  --shadow-brutal-sm: 4px 4px 0 #ccff00;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  background-image:
+    linear-gradient(#111111 1px, transparent 1px),
+    linear-gradient(90deg, #111111 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 
 html {
@@ -50,10 +68,25 @@ html {
 }
 
 ::selection {
-  background: #ffffff;
+  background: #ccff00;
   color: #000000;
 }
 
 * {
   border-radius: 0 !important;
+}
+
+.brutal-card {
+  border: 3px solid #f4f4f0;
+  box-shadow: 6px 6px 0 #ccff00;
+}
+
+.brutal-card-cyan {
+  border: 3px solid #f4f4f0;
+  box-shadow: 6px 6px 0 #00e5ff;
+}
+
+.brutal-card-magenta {
+  border: 3px solid #f4f4f0;
+  box-shadow: 6px 6px 0 #ff00e5;
 }

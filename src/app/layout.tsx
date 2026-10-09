@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const display = Space_Grotesk({ subsets: ["latin"], weight: ["500", "700"] });
+const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-brutal-mono" });
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.dhaniaa.my.id";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black text-white min-h-screen`}>
+      <body className={`${display.className} ${mono.variable} bg-[#0A0A0A] text-[#F4F4F0] min-h-screen antialiased`}>
         {children}
       </body>
     </html>
